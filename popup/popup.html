@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HANU TKB Preview</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="app">
+    <div id="header">
+      <h1>Thời khoá biểu dự kiến</h1>
+      <span id="total-credits">0 TC</span>
+      <span id="stale-warning" class="hidden"></span>
+      <div id="actions">
+        <button id="refresh-btn" title="Làm mới">⟳ Làm mới</button>
+        <button id="clear-btn" title="Xoá tất cả">✕ Xoá tất cả</button>
+      </div>
+    </div>
+    <div id="week-nav">
+      <button id="prev-week">◀ Tuần trước</button>
+      <span id="week-label"></span>
+      <button id="next-week">Tuần sau ▶</button>
+      <button id="today-week">Hôm nay</button>
+    </div>
+    <div id="grid-container">
+      <div class="table-frame">
+        <table id="schedule-grid">
+          <thead></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div id="course-list-section">
+      <h2 id="course-list-title">Danh sách môn đã chọn (<span id="course-count">0</span>)</h2>
+      <div id="course-list-scroll">
+        <table id="course-list">
+          <thead>
+            <tr>
+              <th style="width:4%">#</th>
+              <th style="width:9%">Mã MH</th>
+              <th style="width:22%">Tên môn học</th>
+              <th style="width:7%">Nhóm</th>
+              <th style="width:5%">Tổ</th>
+              <th style="width:5%">TC</th>
+              <th style="width:40%">Lịch học</th>
+              <th style="width:8%"></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div id="empty-state" class="hidden">
+      <div class="empty-icon">📅</div>
+      <p>Chưa chọn môn học nào.</p>
+      <p class="hint">Vào trang <strong>Đăng ký môn học</strong> trên qldt.hanu.edu.vn<br>và bấm nút <strong>Chọn</strong> cạnh mỗi môn.</p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
