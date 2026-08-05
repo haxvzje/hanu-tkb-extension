@@ -204,4 +204,4 @@ Phát triển bởi [@haxvzje](https://github.com/haxvzje)
 
 ## 📄 License
 
-MIT License — xem [LICENSE](LICENSE) để biết thêm chi tiết.
+GPL-3.0 License — xem [LICENSE](LICENSE) để biết thêm chi tiết.
