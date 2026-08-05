@@ -91,27 +91,27 @@
 
 ```
 ┌─────────────────────────────┐     ┌──────────────────────┐
-│   Trang đăng ký môn học      │     │   Tab TKB Preview     │
-│   (qldt.hanu.edu.vn)        │     │   (chrome-extension)   │
-│                              │     │                       │
-│  ┌──────────────────────┐   │     │  ┌─────────────────┐  │
-│  │    content.js        │   │     │  │   popup.js      │  │
-│  │                      │   │     │  │                  │  │
-│  │ • Inject nút Chọn    │   │     │  │ • Render grid   │  │
-│  │ • Parse schedule     │   │     │  │ • Week nav      │  │
-│  │ • Conflict check     │   │     │  │ • Course list   │  │
-│  │ • MutationObserver   │   │     │  │ • Conflict bar  │  │
-│  └──────┬───────────────┘   │     │  └────────┬────────┘  │
-│         │                    │     │           │           │
-│         │  chrome.storage    │     │           │ storage   │
-│         │  .local            │◄────┼───────────┤ .onChanged│
-│         │                    │     │           │           │
-│  ┌──────┴───────────────┐   │     │  ┌────────┴────────┐  │
-│  │     background.js    │   │     │  │   popup.html    │  │
-│  │  • Badge counter     │   │     │  │   popup.css     │  │
-│  │  • Open tab on click │   │     │  └─────────────────┘  │
-│  └──────────────────────┘   │     │                       │
-└─────────────────────────────┘     └───────────────────────┘
+│   Trang đăng ký môn học     │     │   Tab TKB Preview    │
+│   (qldt.hanu.edu.vn)        │     │   (chrome-extension) │
+│                             │     │                      │
+│  ┌──────────────────────┐   │     │  ┌─────────────────┐ │
+│  │    content.js        │   │     │  │   popup.js      │ │
+│  │                      │   │     │  │                 │ │
+│  │ • Inject nút Chọn    │   │     │  │ • Render grid   │ │
+│  │ • Parse schedule     │   │     │  │ • Week nav      │ │
+│  │ • Conflict check     │   │     │  │ • Course list   │ │
+│  │ • MutationObserver   │   │     │  │ • Conflict bar  │ │
+│  └──────┬───────────────┘   │     │  └────────┬────────┘ │
+│         │                   │     │           │          │
+│         │  chrome.storage   │     │           │ storage  │
+│         │  .local           │◄────┼───────────┤.onChanged│
+│         │                   │     │           │          │
+│  ┌──────┴───────────────┐   │     │  ┌────────┴────────┐ │
+│  │     background.js    │   │     │  │   popup.html    │ │
+│  │  • Badge counter     │   │     │  │   popup.css     │ │
+│  │  • Open tab on click │   │     │  └─────────────────┘ │
+│  └──────────────────────┘   │     │                      │
+└─────────────────────────────┘     └──────────────────────┘
 ```
 
 **Data flow:** `content.js` parse DOM → lưu `Map` in-memory → sync `chrome.storage.local` → `popup.js` nhận real-time qua `storage.onChanged` → render TKB + danh sách.
