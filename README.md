@@ -44,7 +44,7 @@
 
 1. **Tải mã nguồn**
    ```bash
-   git clone https://github.com/haxvzje/hanu-tkb-preview.git
+   git clone https://github.com/haxvzje/hanu-tkb-extension.git
    ```
 
 2. **Mở Chrome Extensions**
