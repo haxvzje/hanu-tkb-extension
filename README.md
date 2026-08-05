@@ -4,7 +4,7 @@
 
 [![Chrome Web Store](https://img.shields.io/badge/Chrome-Extension-07689F?logo=googlechrome&logoColor=white)](https://qldt.hanu.edu.vn)
 [![Manifest](https://img.shields.io/badge/Manifest-V3-07689F)](https://developer.chrome.com/docs/extensions/mv3/intro/)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![License](https://img.shields.io/badge/License-GNU_GPL_3.0-green)](LICENSE)
 
 ---
 
