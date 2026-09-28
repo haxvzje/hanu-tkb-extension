@@ -3,6 +3,7 @@ chrome.action.onClicked.addListener(() => {
   chrome.tabs.create({ url: chrome.runtime.getURL('popup/popup.html') });
 });
 
+// Event checking
 chrome.runtime.onMessage.addListener((msg, sender) => {
   if (msg.type === 'UPDATE_BADGE') {
     const text = msg.count > 0 ? String(msg.count) : '';
