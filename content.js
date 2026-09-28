@@ -189,6 +189,7 @@ async function loadFromStorage() {
   }
 }
 
+// init
 function init() {
   loadFromStorage().then(() => {
     const table = document.querySelector(TABLE_SELECTOR);
