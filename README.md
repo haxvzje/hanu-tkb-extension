@@ -1,6 +1,6 @@
 # 🎓 HANU TKB Preview
 
-> Chrome Extension giúp sinh viên Đại học Hà Nội xem trước thời khoá biểu và phát hiện trùng lịch trước khi đăng ký môn học.
+> Chrome Extension giúp sinh viên của trường Đại học Hà Nội xem trước thời khoá biểu và phát hiện trùng lịch trước khi đăng ký môn học.
 
 [![Chrome Web Store](https://img.shields.io/badge/Chrome-Extension-07689F?logo=googlechrome&logoColor=white)](https://qldt.hanu.edu.vn)
 [![Manifest](https://img.shields.io/badge/Manifest-V3-07689F)](https://developer.chrome.com/docs/extensions/mv3/intro/)
